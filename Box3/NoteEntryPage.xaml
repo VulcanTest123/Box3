@@ -17,6 +17,10 @@
             <Button Grid.Column="1"
                     Text="Delete"
                     Clicked="OnDeleteButtonClicked"/>
+            <!--neuer Button fuer neuen Screen fuer Fibonacci-Zahlen-->
+            <Button Grid.Column="2"
+                    Text="Fibonacci"
+                    Clicked="OnFiboButtonClicked" />
         </Grid>
     </StackLayout>
 </ContentPage>

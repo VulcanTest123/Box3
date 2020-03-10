@@ -1,0 +1,22 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="Box3.FiboPage"
+             Title="Fibo Entry">
+    <StackLayout Margin="20">
+        
+            <!--Fibonacci-Slider und mit Label der aktuellen Stufe
+            und eines mit der dazugehoerigen Fibo.Zahl -->
+            <Slider x:Name="FiboSlider"
+                    Maximum="12"
+                    Minimum="1"
+                    ValueChanged="OnSliderValueChanged" />
+
+            <Label x:Name="zahl" Text="" />
+
+            <Label x:Name="fibo" Text="{Binding fibo}" />
+  
+        
+    </StackLayout>
+   
+</ContentPage>

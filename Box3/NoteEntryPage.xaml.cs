@@ -42,5 +42,16 @@ namespace Box3
 
             await Navigation.PopAsync();
         }
+
+
+
+
+        //bei Click wird neuer Screen geoeffnet der zu den Fibonacci-Zahlen fuehrt
+        async void OnFiboButtonClicked(object sender, EventArgs e)
+        {
+            await Navigation.PushAsync(new FiboPage());
+
+         //   await Navigation.PopAsync();
+        }
     }
 }
